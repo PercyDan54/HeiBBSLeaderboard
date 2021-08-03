@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace GetScore_GUI
+namespace HeiBBSLeaderboard
 {
     internal class LeaderBoardResponse
     {
@@ -10,6 +10,6 @@ namespace GetScore_GUI
         public Dictionary<string, JToken> Users;
 
         [JsonProperty("ok")]
-        public int OK;
+        public int Ok;
     }
 }

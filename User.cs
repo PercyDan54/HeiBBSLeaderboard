@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace GetScore_GUI
+namespace HeiBBSLeaderboard
 {
     public class User
     {
@@ -15,13 +15,6 @@ namespace GetScore_GUI
         [JsonProperty("username")]
         public string Name;
 
-        public User(string name, int credit = 0, int uid = 1)
-        {
-            Credit = credit;
-            Name = name;
-            UID = uid;
-        }
-
         protected readonly Dictionary<string, int> LevelMap = new Dictionary<string, int>
         {
             { "幽灵", 0 },
@@ -33,7 +26,7 @@ namespace GetScore_GUI
             { "神灵", 6 },
             { "催更灵", 7 },
         };
-        
+
         public string Level
         {
             get
@@ -46,9 +39,9 @@ namespace GetScore_GUI
                 if (Credit >= 100) return "生灵";
                 if (Credit >= 0) return "物质灵";
                 if (Credit < 0) return "幽灵";
+
                 throw new ArgumentException("非法参数");
             }
-            set => throw new NotSupportedException($"Adjust via { nameof(Credit) }");
         }
 
         public int LevelID

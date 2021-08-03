@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GetScore_GUI.Properties
+namespace HeiBBSLeaderboard.Properties
 {
 
 
