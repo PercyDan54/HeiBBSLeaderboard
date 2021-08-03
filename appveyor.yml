@@ -7,7 +7,7 @@ clone_depth: 1
 before_build:
   - ps: nuget restore -verbosity quiet
 build:
-  project: GetScore_GUI.sln
+  project: HeiBBSLeaderboard.sln
   verbosity: minimal
 test: off
 artifacts:
@@ -15,7 +15,7 @@ artifacts:
   name: HeiBBSLeaderboard
 deploy:
 - provider: GitHub
-  tag: 1.2
+  tag: 1.3
   auth_token:
     secure: wBUeC7f0SGZTu01Bl50RTSas9yizhxdAeqofugDSTpOoZFXOyzvP+X2OOAnaqIWz
   repository: PercyDan54/HeiBBSLeaderboard

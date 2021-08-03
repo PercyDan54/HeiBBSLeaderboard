@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B8DA74E7-7889-4CF5-BEAB-E354BD34733F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GetScore_GUI</RootNamespace>
-    <AssemblyName>妖灵论坛积分排行榜</AssemblyName>
+    <RootNamespace>HeiBBSLeaderboard</RootNamespace>
+    <AssemblyName>HeiBBSLeaderboard</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>.\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="HtmlMonkey, Version=2.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SoftCircuits.HtmlMonkey.2.0.6\lib\netstandard2.0\HtmlMonkey.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
